@@ -6,7 +6,7 @@ Example elasticsearch-curator docker image that includes an externally editable 
 - Config.yml is the Curator configuration file
 - Hostname/IP addess must be in the `hosts` section of Config.yml
 
-Run container by using `docker run --rm --name curator --link *ELASTICSEARCH-CONTAINER* asynchrony/docker-elasticsearch-curator`
+Run container by using `docker run --rm --name curator --link elasticsearch asynchrony/docker-elasticsearch-curator`
 
 
 
