@@ -78,7 +78,7 @@ actions:
       This action will ignore indices already forceMerged to the same or fewer
       number of segments per shard, so the 'forcemerged' filter is unneeded.
     options:
-      max_num_segments: 2
+      max_num_segments: 1
       delay: 180
       timeout_override: 21600
       continue_if_exception: False
