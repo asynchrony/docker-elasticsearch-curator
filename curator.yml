@@ -10,10 +10,11 @@ actions:
     action: close
     description: "Close all indices equal or older than 1 days"
     options:
+      ignore_empty_list: True
       delete_aliases: False
       timeout_override:
       continue_if_exception: False
-      disable_action: False
+      disable_action: True
     filters:
     - filtertype: age
       source: name
