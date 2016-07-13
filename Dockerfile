@@ -7,5 +7,4 @@ RUN apk add --no-cache bash python python-dev openssl py-pip gettext && \
 ADD curator.yml /root/curator.yml
 ADD config.yml /root/config.yml
 
-# Launch Elastalert when a container is started.
 ENTRYPOINT ["curator", "--config", "/root/config.yml", "/root/curator.yml"]
