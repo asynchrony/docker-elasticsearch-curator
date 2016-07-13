@@ -79,8 +79,8 @@ actions:
       number of segments per shard, so the 'forcemerged' filter is unneeded.
     options:
       max_num_segments: 2
-      delay: 120
-      timeout_override:
+      delay: 180
+      timeout_override: 21600
       continue_if_exception: False
       disable_action: False
     filters:
