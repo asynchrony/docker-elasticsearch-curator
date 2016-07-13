@@ -1,8 +1,6 @@
-FROM alpine:3.4
+FROM python:2-alpine
 
-RUN apk add --no-cache bash python python-dev openssl py-pip gettext && \
-    wget "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python && \
-    pip install elasticsearch-curator
+RUN pip install elasticsearch-curator
     
 ADD curator.yml /root/curator.yml
 ADD config.yml /root/config.yml
