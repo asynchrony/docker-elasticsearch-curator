@@ -44,7 +44,7 @@ actions:
       direction: older
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 45
+      unit_count: 7
       exclude:
   3:  
     action: delete_indices
@@ -67,7 +67,7 @@ actions:
       direction: older
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 14
+      unit_count: 7
       exclude:
   4:
     action: forcemerge
